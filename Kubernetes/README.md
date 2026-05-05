@@ -78,7 +78,7 @@ sudo yum install mariadb105-server -y
 ```
 **Login To RDS**
 ````
-mysql -h <rds-endpoint> -u <db-username> -p<password>
+mysql -h <rds-endpoint> -u <db-username> -p<password> --ssl
 ````
 
 - Create the database:
