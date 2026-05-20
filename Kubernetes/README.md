@@ -35,7 +35,7 @@ aws configure
 
 **Create Amazon EKS cluster using eksctl**
 ````
-eksctl create cluster --name eks-oncdecb36 --region ap-southeast-1 --version 1.34 --nodegroup-name linux-nodes --node-type t3.medium --nodes 1
+eksctl create cluster --name eks-oncdecb36 --region ap-southeast-1 --version 1.34 --nodegroup-name linux-nodes --node-type t3.small --nodes 1
 ````
 **Log In Into EKS cluster**
 ````
