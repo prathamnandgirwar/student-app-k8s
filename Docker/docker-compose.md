@@ -23,36 +23,15 @@ docker --version
 ```bash
 mysql -h <rds-endpoint> -u admin -p
 ```
-
----
-
-### Create Database
+### Create a new database and user:
 
 ```sql
 CREATE DATABASE student_db;
+GRANT ALL PRIVILEGES ON springbackend.* TO 'username'@'localhost' IDENTIFIED BY 'your_password';
 ```
-
-```sql
-USE student_db;
-```
-
+Replace username and your_password with your desired username and password.
 ---
 
-### Create Students Table
-
-```sql
-CREATE TABLE students (
-id bigint NOT NULL AUTO_INCREMENT,
-name varchar(255),
-email varchar(255),
-course varchar(255),
-student_class varchar(255),
-percentage double,
-branch varchar(255),
-mobile_number varchar(255),
-PRIMARY KEY (id)
-);
-```
 
 ---
 
